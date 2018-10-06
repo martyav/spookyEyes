@@ -6,6 +6,8 @@ body {
 
 .spookyEyes {
   position: relative;
+  height: 100%;
+  width: auto;
 }
 
 .leftEye, .rightEye {
@@ -27,17 +29,17 @@ body {
   margin-left: 200px;
 }
 
-.leftPupil, .rightPupil {
+.pupil {
   position: absolute;
   height: 100;
   width: 75;
-  bottom: 0%;
+  bottom: 25%;
   left: 30%;
   background: black;
   border-radius: 70%;
 }
 
-.leftPupil::after, .rightPupil:after {
+.pupil::after {
   content: "";
   display: block;
   position: absolute;
