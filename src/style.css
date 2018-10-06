@@ -1,1 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
 
+.spookyEyes {
+  position: relative;
+}
+
+.leftEye, .rightEye {
+  position: absolute;
+  height: 300px;
+  width: 175px;
+  top: 10%;
+  background: white;
+  border: 5px solid black;
+  border-radius: 70%;
+}
+
+.leftEye {
+  left: 10%;
+}
+
+.rightEye {
+  left: 10%;
+  margin-left: 200px;
+}
+
+.leftPupil, .rightPupil {
+  position: absolute;
+  height: 100;
+  width: 75;
+  bottom: 0%;
+  left: 30%;
+  background: black;
+  border-radius: 70%;
+}
+
+.leftPupil::after, .rightPupil:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 0;
+  right: 20%;
+  background: white;
+  border-radius: 100%;
+}
